@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Helping Support System</title>
+    <meta name="description" content="A platform to report and resolve rural issues, improve infrastructure, and connect communities.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif
+        }
+        
+        .background-section {
+            background: url('background-image.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .background-section .content {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .background-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .background-section p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background: url('i2.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #2b8a3e;
+            color: #fff
+        }
+        
+        header .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #fff
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex
+        }
+        
+        nav ul li {
+            margin-left: 20px
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+            transition: .3s
+        }
+        
+        nav ul li a:hover {
+            color: #ffcc33
+        }
+        
+        .search-bar {
+            display: flex;
+        }
+        
+        .search-bar input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px 0 0 3px;
+        }
+        
+        .search-bar button {
+            padding: 5px 10px;
+            background: #2b8a3e;
+            color: #fff;
+            border: none;
+            border-radius: 0 3px 3px 0;
+            cursor: pointer;
+        }
+        
+        .header-buttons {
+            display: flex;
+            gap: 10px
+        }
+        
+        .header-buttons a {
+            color: #2b8a3e;
+            background: #ffcc33;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: .3s
+        }
+        
+        .header-buttons a:hover {
+            background: #fff;
+            color: #2b8a3e
+        }
+        
+        .search-bar {
+            display: flex
+        }
+        
+        .search-bar input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px 0 0 3px
+        }
+        
+        .search-bar button {
+            padding: 5px 10px;
+            background: #ffcc33;
+            color: #2b8a3e;
+            border: none;
+            border-radius: 0 3px 3px 0;
+            cursor: pointer;
+            transition: .3s
+        }
+        
+        .search-bar button:hover {
+            background: #fff;
+            color: #2b8a3e
+        }
+        
+        .hero {
+            background: url('hero-banner.jpg') no-repeat center center/cover;
+            color: #fff;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center
+        }
+        
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px
+        }
+        
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px
+        }
+        
+        .cta-btn {
+            padding: 10px 20px;
+            background: #ffcc33;
+            color: #2b8a3e;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: .3s
+        }
+        
+        .cta-btn:hover {
+            background: #fff;
+            color: #2b8a3e
+        }
+        
+        .features {
+            padding: 50px 20px;
+            text-align: center;
+            background: #f8f8f8
+        }
+        
+        .features h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2b8a3e
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px
+        }
+        
+        .feature {
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+            transition: .2s
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, .2)
+        }
+        
+        .feature img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        
+        .testimonials {
+            padding: 50px 20px;
+            background: #2b8a3e;
+            color: #fff;
+            text-align: center
+        }
+        
+        .testimonials h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px
+        }
+        
+        .testimonial {
+            margin: 20px auto;
+            max-width: 600px
+        }
+        
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 10px;
+            font-size: 1.1em
+        }
+        
+        .testimonial strong {
+            font-size: 1.1em;
+            color: #ffcc33
+        }
+        
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px
+        }
+        
+        footer a {
+            color: #ffcc33;
+            text-decoration: none;
+            transition: .3s
+        }
+        
+        footer a:hover {
+            text-decoration: underline
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Helping Support System</div>
+        <nav>
+            <ul>
+                <li><a href="home.html" target="content">Home</a></li>
+                <li><a href="aboutus.html" target="content">About Us</a></li>
+                <li><a href="services.html" target="content">Services</a></li>
+                <li><a href="report problem.html" target="content">Report Problem</a></li>
+                <li><a href="contactus.html" target="content">Contact Us</a></li>
+
+            </ul>
+        </nav>
+        <div class="header-buttons">
+            <a href="login.html" target="content">Login</a>
+            <a href="sign up.html" target="content">Sign Up</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Go</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>"Working To Solve All The Problems Quickly"</h1>
+            <p> Report issues, track progress,find solutions. and bring about the positive changes to your community needs for the development .</p>
+
+            <a href="report problem.html" class="cta-btn" target="content">Report Problem</a>
+        </div>
+    </section>
+    <section class="features">
+        <h2>Our Key Focus Areas</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <img src="i1.avif" alt="Water">
+                <h3>Water Management</h3>
+                <p>Ensure clean and accessible water supply.</p>
+            </div>
+            <div class="feature">
+                <img src="i4.jpg" alt="Healthcare">
+                <h3>Healthcare Services</h3>
+                <p>Telemedicine and health initiatives.</p>
+            </div>
+            <div class="feature">
+                <img src="i5.jpg" alt="Education">
+                <h3>Educational Support</h3>
+                <p>Improving literacy and digital skills.</p>
+            </div>
+            <div class="feature">
+                <img src="i6.jpg" alt="Roads">
+                <h3>Good society Infrastructure</h3>
+                <p>Improving social areas and better roads for connectivity.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What People Are Saying</h2>
+        <div class="testimonial">
+            <p>"Thanks to the Helping Support System, clean water and healthcare have become accessible to us!"</p>
+            <strong>- Ramesh Kumar</strong>
+        </div>
+        <div class="testimonial">
+            <p>"Our village now has better roads, thanks to this initiative!"</p>
+            <strong>- Sunita Devi</strong>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Helping Support System. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+    </footer>
+</body>
+
+</html>

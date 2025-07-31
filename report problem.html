@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report a Problem - The Helping Support System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            background: url('i11.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        
+        header {
+            background: #74d474;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #020403;
+            text-align: center;
+        }
+        
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        
+        select,
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        textarea {
+            height: 100px;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #2b8a3e;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .button:hover {
+            background: #1e6832;
+        }
+        
+        .progress-container {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .progress-step {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .progress-step span {
+            margin-left: 10px;
+        }
+        
+        .comment-section {
+            margin-top: 20px;
+        }
+        
+        .comment-section textarea {
+            margin-bottom: 10px;
+        }
+        
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .rating input {
+            display: none;
+        }
+        
+        .rating label {
+            font-size: 30px;
+            color: #ddd;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+        
+        .rating input:checked~label {
+            color: gold;
+        }
+        
+        .rating label:hover,
+        .rating label:hover~label {
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+
+
+    </header>
+    <h1> "Report A Problem"</h1>
+
+    <div class="container">
+
+        <form id="reportForm">
+            <label for="problemType">Problem Type:</label>
+            <select id="problemType" required>
+                <option value="">Select a problem type</option>
+                <option value="Water Supply Issues">Water Supply Issues</option>
+                <option value="Healthcare Access">Healthcare Access</option>
+                <option value="Road Conditions">Road Conditions</option>
+                <option value="Educational Support">Educational Support</option>
+                <option value="Network (Internet)">Network (Internet)</option>
+                <option value="Development">Development</option>
+                <option value="Sanitation and Hygiene">Sanitation and Hygiene</option>
+                <option value="Society Infrastructure">Society Infrastructure</option>
+                <option value="Social Support and Technology">Social Support and Technology</option>
+                <option value="Energy Access">Energy Access</option>
+                <option value="Economic Opportunities">Economic Opportunities</option>
+                <option value="Digital Literacy">Digital Literacy</option>
+                <option value="Unemployment">Unemployment</option>
+                <option value="Transportation">Transportation</option>
+            </select>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" placeholder="Enter your location" required>
+            <a href="https://www.google.com/maps" target="_blank" class="button" style="display: inline-block; margin-top: 5px;">Find on Google Maps</a>
+
+            <label for="description">Problem Description:</label>
+            <textarea id="description" placeholder="Describe the problem in detail" required></textarea>
+
+            <button type="submit" class="button">Submit Report</button>
+        </form>
+
+        <div class="progress-container">
+            <h2>Problem Progress</h2>
+            <div class="progress-step">Request Checking <span>&#x2713;</span></div>
+            <div class="progress-step">Tracking <span>&#x2713;</span></div>
+            <div class="progress-step">Searching problem <span>&#x2713;</span></div>
+            <div class="progress-step">Finding Solution <span>&#x2713;</span></div>
+            <div class="progress-step">Work on Problem <span>&#x2713;</span></div>
+            <div class="progress-step">Solve problem successfully <span>&#x2713;</span></div>
+        </div>
+
+        <div class="comment-section">
+            <h2>Suggestions and Comments</h2>
+            <textarea placeholder="Write your suggestions or comments here..."></textarea>
+            <button class="button">Submit Comment</button>
+        </div>
+
+        <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">&#9733;</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">&#9733;</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">&#9733;</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">&#9733;</label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">&#9733;</label>
+        </div>
+        <div class="ratings">
+            <h2>Rate Our Service out of 5</h2>
+            <div class="stars" id="star-rating">
+
+            </div>
+            <textarea id="feedback" rows="3" placeholder="Share your feedback"></textarea>
+        </div>
+        <div class="reviews">
+            <h2>What People Are Saying</h2>
+            <div class="review">
+                <div class="author"><b>John Doe-</b></div>
+                <div class="content">The team was very responsive and resolved the issue quickly. Highly recommend their service!</div>
+            </div>
+            <div class="review">
+                <div class="author"><b>Jane Smith-</b></div>
+                <div class="content">Great experience! The issue was addressed professionally and in a timely manner.</div>
+            </div>
+            <div class="review">
+                <div class="author"><b>Emily Johnson-</b></div>
+                <div class="content">Thank you for your prompt action. The process was seamless, and the problem was resolved efficiently.</div>
+            </div>
+        </div>
+
+</body>
+
+</html>

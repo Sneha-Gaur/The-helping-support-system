@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Helping Support System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+            background: url('i11.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        
+        header {
+            background: #2b8a3e;
+            color: #fff;
+            padding: 20px 0;
+            display: flex;
+            text-align: center;
+            justify-content: flex-start;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            flex-grow: 1;
+            text-align: center;
+        }
+        
+        header p {
+            font-size: 1.2em;
+        }
+        
+        header .logo {
+            margin-left: 20px;
+            width: 80px;
+            height: auto;
+        }
+        
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        section h2 {
+            font-size: 2.5em;
+            color: #2b8a3e;
+            margin-bottom: 20px;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .feature {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        
+        .feature h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        .feature p {
+            font-size: 1.1em;
+        }
+        
+        .cta-btn {
+            padding: 10px 20px;
+            background: #ffcc33;
+            color: #2b8a3e;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .cta-btn:hover {
+            background: #fff;
+            color: #2b8a3e;
+        }
+        
+        .testimonials {
+            background: #2b8a3e;
+            color: #fff;
+            padding: 50px 20px;
+        }
+        
+        .testimonial {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        
+        .testimonial p {
+            font-style: italic;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        
+        .testimonial strong {
+            color: #ffcc33;
+            font-size: 1.1em;
+        }
+        
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        footer a {
+            color: #ffcc33;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .feature-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="i12.jpg" alt="Logo" class="logo">
+        <h1> "Empowering Communities, One Step at a Time"</h1>
+
+    </header>
+    <section>
+        <h2>Welcome to The Helping Support System</h2>
+        <p>"A platform to report, track, and resolve issues, improving lives and infrastructure in your community"</p>
+        <p>At The Helping Support System, we are committed to empowering communities by providing a platform for Needy peoples to report their problems. Whether it's water supply issues, healthcare access, road conditions, or educational support,Network
+            (Internet),Development, Area problem (Road),Sanitation and hygiene (toilet and waste management),Society infrastructure,Social support and technology,Energy access (light),Economic (financial),Digital literacy,Unemployment,Transportation etc....we
+            work towards timely interventions that bring positive change. Our goal is to enhance your quality of life by ensuring that your voices are heard and your problems are solved efficiently.</p>
+    </section>
+    <section>
+        <h2>Our Focus Areas</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <img src="i1.avif" alt="Water">
+                <h3>Water Management</h3>
+                <p>Access to clean and sustainable water for all.</p>
+            </div>
+            <div class="feature">
+                <img src="i4.jpg" alt="Healthcare">
+                <h3>Healthcare Services</h3>
+                <p>Telemedicine and healthcare support for emergency </p>
+            </div>
+            <div class="feature">
+                <img src="i5.jpg" alt="Education">
+                <h3>Educational Support</h3>
+                <p>Bringing digital literacy and educational resources to communities.</p>
+            </div>
+            <div class="feature">
+                <img src="i6.jpg" alt="Roads">
+                <h3>Good society Infrastructure</h3>
+                <p>Improving social areas and better roads for connectivity.</p>
+            </div>
+            <div class="feature">
+                <img src="i8.jpg" alt="Sanitation">
+                <h3>Sanitation & Hygiene</h3>
+                <p>Ensuring clean and hygienic living conditions.</p>
+            </div>
+            <div class="feature">
+                <img src="i9.jpg" alt="Energy">
+                <h3>Energy Access</h3>
+                <p>Bringing sustainable energy solutions to homes.</p>
+            </div>
+            <div class="feature">
+                <img src="i10.jpg" alt="Economic">
+                <h3>Economic Opportunities</h3>
+                <p>Supporting economic development and job creation.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>How It Works</h2>
+        <p>Our platform is simple and easy to use. Here's how it works:</p>
+        <ol>
+            <li><strong>Report an Issue:</strong> Submit your problems related to water, healthcare, education, roads, and more.</li>
+            <li><strong>Track Solutions:</strong> Stay updated on the progress of your reported issues.</li>
+            <li><strong>Government Intervention:</strong> The relevant authorities are notified to take action and resolve the problem.</li>
+        </ol>
+    </section>
+    <section>
+        <h2>Get Involved</h2>
+        <p>Join us in making a difference. Report issues, track progress, and bring about the change your community needs. Together, we can improve peoples lives.</p>
+        <a href="#" class="cta-btn">Report an Issue</a>
+    </section>
+    <section class="testimonials">
+        <h2>What Our Users Are Saying</h2>
+        <div class="testimonial">
+            <p>"Thanks to The Helping Support System, clean water and healthcare have become accessible to us!"</p>
+            <strong>- Ramesh Kumar</strong>
+        </div>
+        <div class="testimonial">
+            <p>"Our village now has better roads, thanks to this initiative!"</p>
+            <strong>- Sunita Devi</strong>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Helping Support System. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+    </footer>
+</body>
+
+</html>
